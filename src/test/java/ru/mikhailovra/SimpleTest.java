@@ -11,9 +11,7 @@ import ru.mikhailovra.pages.VacanciesPage;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import static java.lang.Thread.sleep;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SimpleTest extends BaseTest {
@@ -22,7 +20,7 @@ public class SimpleTest extends BaseTest {
 
     @Test
     @DisplayName("Vacancy C.T.Co")
-    void checkVacancyCTCo() throws InterruptedException {
+    void checkVacancyCTCo() {
         driver.get("https://ctco.lv/en");
 
         driver.findElement(mainPage.career).click();
